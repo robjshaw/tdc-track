@@ -1,0 +1,22 @@
+{
+  "name": "tdc-track",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "twilio-run",
+    "deploy": "twilio-run deploy"
+  },
+  "dependencies": {
+    "@mapbox/polyline": "^1.1.1",
+    "@twilio/runtime-handler": "1.2.1",
+    "airtable": "^0.11.2",
+    "twilio": "^3.56"
+  },
+  "devDependencies": {
+    "twilio-run": "^3.4.0"
+  },
+  "engines": {
+    "node": "12"
+  }
+}
