@@ -9,8 +9,8 @@ exports.handler = function(context, event, callback) {
     base('gps').create([
         {
           "fields": {   "device" : event.id,
-                        "latitude" : event.lat,
-                        "longitude" : event.lon,
+                        "latitude" : parseFloat(event.lat),
+                        "longitude" : parseFloat(event.lon),
                         "speed" : event.speed,
                         "altitude" : event.altitude
                     }
