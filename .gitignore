@@ -133,3 +133,4 @@ dist
 .pnp.*
 .twilioserverlessrc
 .nvmrc
+.DS_Store
