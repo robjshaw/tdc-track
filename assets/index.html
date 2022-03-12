@@ -16,37 +16,53 @@
 </head>
 <body>
 
-    <div id="map"></div>
+  <div style="padding:20px;">
+
+    <div class="alert alert-info shadow-lg">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>See Live progress below!</span>
+      </div>
+    </div>
 
     <br clear="all" />
-    
-    <div style="float:right;margin-top:10px;height:200%;margin-right:10px;height:1200px;overflow:scroll;">
-        <div class="card w-96 bg-base-100 image-full">
-            <div class="card-body items-center text-center">
-              <style>
-                h1 {text-align: center;}
-                h2 {text-align: center;}
-                p {text-align: center;}
-                div {text-align: center;}
-                </style>
-              <h2 class="card-title">Support Us</h2>
-              <figure><img src="https://cdn2.downdetector.com/static/uploads/c/300/0915e/twilio-logo-red.png" alt="Shoes"></figure>
-              <p><b>We'd love your messages of support</b></p>
-              <p>Please scan the QR code below</p>
-              <p>or text <b>+61 481 613 121</b></p>
-              <div class="card-actions">
-                <img src="SMS_qr_code.png" style="width:200px;height:200px;" alt="centered image" class="marginauto"/>
-                <button class="btn btn-success">DONATE HERE</button>
-                <p><b>Powered by Twilio</b></p>
-                <style>
-                  .marginauto {
-                      margin: 10px auto 20px;
-                      display: block;
-                  }
-                  </style>
-              </div>
-            </div>
+
+    <div class="card w-96 bg-base-100 image-full" style="width:100%;">
+        <div class="card-body items-center text-center">
+          <style>
+            h1 {text-align: center;}
+            h2 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            </style>
+          <h2 class="card-title">Support Us</h2>
+          <figure><img src="https://cdn2.downdetector.com/static/uploads/c/300/0915e/twilio-logo-red.png" alt="Shoes"></figure>
+          <p><b>We'd love your messages of support</b></p>
+          <p>Please scan the QR code below</p>
+          <p>or text <b>+61 481 613 121</b></p>
+          <div class="card-actions">
+            <img src="SMS_qr_code.png" style="width:200px;height:200px;" alt="centered image" class="marginauto"/>
+            <style>
+              .marginauto {
+                  margin: 10px auto 20px;
+                  display: block;
+              }
+              </style>
+          </div>
         </div>
+    </div>
+
+    <br clear="all" />
+
+</div>
+
+
+  <br clear="all" />
+      <div id="map" style="margin-top:700px;min-height:500px;"></div>
+
+         
+
+      
           <!--
           <br />
           <div class="card w-96 bg-base-100 shadow-xl">
@@ -68,7 +84,6 @@
           </div>
 
           -->
-    </div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="map.js"></script>
